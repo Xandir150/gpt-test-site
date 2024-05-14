@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Symple Site</title>
+<meta charset="UTF-8">
+<title>Simple Multilingual Site</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/react@17.0.2/umdreact.development.js"></script>
+<script src="https://unpkg.com/react-dom/17.0.2/umdreact-dom.development.js"></script>
 </head>
 <body>
-<h1>Welcome to Our Simple Site</h1>
+<div id="root"></div>
+<script>
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <App />
+  );
+</script>
 </body>
 </html>
